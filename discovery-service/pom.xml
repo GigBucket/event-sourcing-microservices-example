@@ -76,7 +76,7 @@
                     <!--docker桌面版使用的是tcp协议，默认连接不上。需要使用bobrik/socat转http协议！！！ -->
                     <dockerHost>http://localhost:2374</dockerHost>
                     <baseImage>java:8</baseImage>
-                    <entryPoint>["java", "-jar", "-Dspring.profiles.active=prod","/${project.build.finalName}.jar"]
+                    <entryPoint>["java", "-jar", "-Dspring.profiles.active=docker","/${project.build.finalName}.jar"]
                     </entryPoint>
                     <resources>
                         <resource>

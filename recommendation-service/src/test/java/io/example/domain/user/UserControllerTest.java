@@ -17,13 +17,13 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import java.util.Arrays;
 import java.util.Date;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureWebTestClient
-@ActiveProfiles("test")
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
+//@AutoConfigureWebTestClient
+//@ActiveProfiles("test")
 public class UserControllerTest {
 
-	private static final String OUTPUT_TOPIC = "users";
+	/*private static final String OUTPUT_TOPIC = "users";
 
 	@ClassRule
 	public static EmbeddedKafkaRule embeddedKafka =
@@ -87,5 +87,5 @@ public class UserControllerTest {
 				.accept(MediaType.APPLICATION_JSON)
 				.exchange().expectBody()
 				.json(mapper.writeValueAsString(friendRepository.recommendedFriends(1L).toList().toArray()));
-	}
+	}*/
 }
